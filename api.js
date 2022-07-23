@@ -7,6 +7,13 @@ const config = require('./config.json');
 class API {
 
     /**
+     * Discordinvites endpoint url
+     *
+     * @type {string}
+     */
+    DISCORDINVITES_API_ENDPOINT_URL = 'https://discordinvites.net/api/';
+
+    /**
      * Route configuration
      * @type {string}
      */
@@ -21,7 +28,7 @@ class API {
     async init(apiKey) {
         if (!this.axios) {
             this.apiKey = apiKey;
-            this.APIUrl = config.discordinvites_api_endpoint_url;
+            this.APIUrl = this.DISCORDINVITES_API_ENDPOINT_URL;
             this.axios = axios;
         }
     }
