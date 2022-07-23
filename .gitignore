@@ -1,0 +1,9 @@
+## PHPStorm package
+.idea
+
+## Package (npm)
+package-lock.json
+node_modules
+
+## Configuration
+config.json
